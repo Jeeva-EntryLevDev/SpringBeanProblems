@@ -11,3 +11,9 @@ For small project : Ignore the MainClass Idea (especially for small test/demo pr
 Engine 
 Car 
 AppConfig --> @ComponentScan and @Configuration and AnnotationConfigApplicationContext, AppConfig Class
+
+
+Car car = context.getBean(Car.class); // Why Car.class, not Engine.class?
+
+"Hey Spring, give me an instance of this class — with all its dependencies injected properly."
+"Spring, give me a Car object, and please inject an Engine object inside it automatically."
